@@ -1,0 +1,40 @@
+<%layout('layouts/boilerplate.ejs')%>
+
+<section class="mx-3">
+    <form action="/spark" method="post">
+        <h1>Transfer Money</h1>
+        <div class="inputbox">
+            <input type="text" required="required" name="from" id="from">
+            <label for="from">From</label>
+        </div>
+        <div class="inputbox">
+            <input type="text" required="required" name="to" id="to">
+            <label for="to">To</label>
+        </div>
+        <div class="inputbox">
+            <input type="number" required="required" name="amount" id="amount">
+            <label for="amount">Amount</label>
+        </div>
+        <button>Send Money</button>
+    </form>
+</section>
+
+<section class="mx-3 text-center">
+    <div>
+    <h1>List of Customers</h1>
+</div>
+    <div>
+    <ul>
+        <li class="my-2 text-white">Rahul</li>
+        <li class="my-2 text-white">Rohit</li>
+        <li class="my-2 text-white">Anchal</li>
+        <li class="my-2 text-white">Riya</li>
+        <li class="my-2 text-white">Raj</li>
+        <li class="my-2 text-white">Avantika</li>
+        <li class="my-2 text-white">Girija</li>
+        <li class="my-2 text-white">Rajesh</li>
+        <li class="my-2 text-white">Puneet</li>
+        <li class="my-2 text-white">Rashmi</li>
+    </ul>
+</div>
+</section>

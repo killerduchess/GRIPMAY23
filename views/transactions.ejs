@@ -1,0 +1,28 @@
+<%layout('layouts/boilerplate.ejs')%>
+
+<div>
+  <section style="width: 500px;">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="text-white">From</th>
+            <th scope="col" class="text-white">To</th>
+            <th scope="col" class="text-white">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+            <%for(let i =0;i<n;i++) {%>
+          <tr>
+            <th scope="row" class="text-white"><%=transactions[i].from%></th>
+            <td scope="row" class="text-white"><%=transactions[i].to%></td>
+            <td scope="row" class="text-white"><%=transactions[i].amount%></td>
+          </tr>
+          <%}%>
+        </tbody>
+      </table>
+    </section>
+
+      <div>
+      <button class="my-3"><a href="/spark" style="text-decoration: none; color: black;">Back to All</a></button>
+      </div>
+    </div>
